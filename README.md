@@ -1,8 +1,21 @@
 # SalazarBank
 
+La explicación del proyecto se encuentra en el archivo PROJECT.md en este mismo repositorio.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.5.
 
 ## Development server
+
+### Requeriments
+
+- Nodejs 12.X.X
+- Angular CLI 8.X.X
+
+### Steps
+
+Clone project with `git clone https://github.com/Boamorte8/SalazarBank.git`
+
+Install dependencies with `npm i`
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
