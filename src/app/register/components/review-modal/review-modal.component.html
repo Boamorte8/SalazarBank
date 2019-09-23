@@ -1,0 +1,23 @@
+<h1 mat-dialog-title>Resumen de Usuario</h1>
+<div mat-dialog-content>
+  <mat-list>
+    <mat-list-item>
+      <p><label class="review-label">Identificación:</label> {{ data.user.identification }}</p>
+    </mat-list-item>
+    <mat-list-item>
+      <p><label class="review-label">Nombre:</label> {{ data.user.firstName }}</p>
+    </mat-list-item>
+    <mat-list-item>
+      <p><label class="review-label">Apellido:</label> {{ data.user.lastName }}</p>
+    </mat-list-item>
+    <mat-list-item>
+      <p><label class="review-label">Fecha de nacimiento:</label> {{ data.user.birthday }}</p>
+    </mat-list-item>
+  </mat-list>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button [mat-dialog-close] cdkFocusInitial >Cancelar</button>
+  <button mat-raised-button color="primary" (click)="registerUser()"
+    cdkFocusInitial >Registrar</button>
+</div>
+

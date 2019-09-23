@@ -3,7 +3,19 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  version: 'DEV_20190921_V0.0.0.0_0457',
+  url: {
+    API_CLIENTS: 'https://testbankapi.firebaseio.com/clients.json'
+  },
+  GENERAL: {
+    CONFIG: {
+      TIMEOUT_REQUEST: 60000,
+      DEFAULT_MAX_RETRIES: 0,
+      DEFAULT_BACKOFF: 1000,
+      DEFAULT_TIME_RETRY: 1000
+    }
+  }
 };
 
 /*

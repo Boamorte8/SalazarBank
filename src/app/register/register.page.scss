@@ -1,0 +1,50 @@
+@import "../../styles/mixins.scss";
+
+.page {
+  &-register {
+    display: flex;
+    justify-content: center;
+  }
+}
+.mat {
+  &-card {
+    width: 14rem;
+    margin-top: 12vh;
+    padding-top: 1.5rem;
+    @include flex-column-center;
+    &-title {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    &-content {
+      @include flex-column-center;
+      & > * {
+        width: 100%;
+      }
+    }
+    &-actions {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &-form {
+    &-field {
+      margin-bottom: .85rem;
+    }
+  }
+}
+
+.form {
+  &-register {
+    width: 100%;
+  }
+}
+
+@media(min-width: 720px) {
+  .mat {
+    &-card {
+      width: 20rem;
+      padding: 2.5rem;
+    }
+  }
+}
